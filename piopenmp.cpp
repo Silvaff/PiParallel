@@ -1,7 +1,6 @@
 #include <omp.h> 	 //Llamado al encabezado que incluye las funciones de OpenMP
 #include <iostream>
 #include <iomanip>
-#include <chrono>	 // Llamado a la libreria Chrono con la que se trabaja el tiempo
 #define NUM_HILOS 4   // Declaracion del maximo de hilos a utilizar en la VirtualBox
 
 constexpr long nsteps = 10000000; 	// Valor que determina las iteraciones del primer for
@@ -9,7 +8,6 @@ double step = 1.0 / double(nsteps);
 
 int main() {
 using namespace std;
-using namespace std::chrono;
 
 	double pi = 0.0;
 	double ini, tiempo, sum[NUM_HILOS];
