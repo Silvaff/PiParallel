@@ -29,7 +29,6 @@ using namespace std::chrono;
 	}
 	for (int i = 0; i < NUM_HILOS; i++) {
 		pi += sum[i] * step;     
-		cout<<"Valor PI: "<<pi<<endl;
 	}
 	tiempo = omp_get_wtime() - ini;				// Se resta el tiempo al momento de finalizar con el tiempo de inicio, para saber cuanto tiempo se tardo.
 	cout<< "PI = "<<setprecision(10)<< pi<< endl; 		//Impresion del valor de Pi con el metodo setprecisio(), el cual establece la precision de un punto flotante
