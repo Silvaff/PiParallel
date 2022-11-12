@@ -1,7 +1,7 @@
 #include <omp.h> 	 //Llamado al encabezado que incluye las funciones de OpenMP
 #include <iostream>
 #include <iomanip>
-#define NUM_HILOS 4   // Declaracion del maximo de hilos a utilizar en la VirtualBox
+#define NUM_HILOS 4   // Declaracion del maximo de hilos a utilizar 
 
 constexpr long nsteps = 10000000; 	// Valor que determina las iteraciones del primer for
 double step = 1.0 / double(nsteps);
